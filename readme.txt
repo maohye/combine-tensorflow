@@ -45,5 +45,17 @@ kitti数据集训练代码。
   --custom_layers.py  一些常规层的设计，不能直接由tensorflow函数定义
   --nets_factory.py  网络工厂，直接调用指定网络架构的程序
   --np_methods.py  候选框的编码、选择、求交并比等
+  --ssd_common.py  对真实目标进行预处理，使ground truth与预测结果对应
   
---
+--preprocessing 预处理
+  --pascal_preprocessing  pascalvoc数据集预处理，包括尺寸变换、图片翻转、色彩变换等
+  --kitti_preprocessing  kitti数据集预处理，包括尺寸变换、图片翻转、色彩变换等
+  --preprocessing_factory  预处理工厂，直接调用给定数据集的预处理函数
+  --tf_image  图片预处理操作的具体函数定义
+  --vgg_preprocessing  其他的一些预处理操作
+  
+--tf_extended  候选框处理
+  --bboxes.py  候选框处理函数定义，包括候选框置信度排序、非极大值抑制、尺寸变换等
+  --math.py  定义网络中的一些运算
+  --metrics.py  计算precision,recall,ap,map指标的函数定义，对应tensorflow模型评估模块的度量(metric)
+  --tensors.py  定义其他的张量运算

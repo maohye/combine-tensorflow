@@ -1,31 +1,43 @@
 代码说明
 ======
 
+[![author](maohye)
+
 combine-tensorflow展示的是基于`区域提取网络和多尺度卷积核的融合模型`的代码。
+
+环境要求
+-----------------
+* windows
+* python(3.6+)
+* google colaboratory
+
+依赖包
+-----------------
+
 
 文件夹结构和功能简介
 -----------------
 
---`combine_pascal.py`
-    pascal voc0712数据集训练代码，这里把pascal voc2007和2012数据集同时作为训练集。
-    训练时必须修改：训练数据的tfrecords格式数据所在文件夹(dataset_dir)、网络参数权重ckpt文件所在文件夹(checkpoint_path)、
-    网络模型作用域(checkpoint_model_scope)、模型权重文件和结果指标events文件保存地址(model_dir)，
-    其他超参数(如学习率，迭代次数，批量大小等)根据实际情况修改。
+*--`combine_pascal.py`
+    *pascal voc0712数据集训练代码，这里把pascal voc2007和2012数据集同时作为训练集。
+    *训练时必须修改：训练数据的tfrecords格式数据所在文件夹(dataset_dir)、网络参数权重ckpt文件所在文件夹(checkpoint_path)、
+    *网络模型作用域(checkpoint_model_scope)、模型权重文件和结果指标events文件保存地址(model_dir)，
+    *其他超参数(如学习率，迭代次数，批量大小等)根据实际情况修改。
 
---`combine_kitti.py` 
+*--`combine_kitti.py` 
     kitti数据集训练代码
     训练时必须修改：训练数据的tfrecords格式数据所在文件夹(dataset_dir)、网络参数权重ckpt文件所在文件夹(checkpoint_path)、
     网络模型作用域(checkpoint_model_scope)、模型权重文件和结果指标events文件保存地址(model_dir)，
     其他超参数(如学习率，迭代次数，批量大小等)根据实际情况修改。
 
---`combine_test.py`
+*--`combine_test.py`
     测试代码
     测试时必须修改：数据名(dataset_name,本文是pascalvoc_2007或者kitti)、类别数(pascalvoc--21,kitti--4)、
     测试数据的tfrecords格式数据所在文件夹(dataset_dir)、
     训练好的网络参数权重ckpt文件所在文件夹(checkpoint_path)、模型权重文件和结果指标events文件保存地址(eval_dir)，
     其他超参数(如学习率，非极大值抑制阈值、目标阈值等)根据实际情况修改。
 
---`tf_utils.py`
+*--`tf_utils.py`
     其他操作合集代码
     包含模型参数更新、学习率下降方式选择、权重文件导入指定参数权重等一些小的操作模块
 

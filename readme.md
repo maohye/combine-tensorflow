@@ -16,14 +16,21 @@ Combine-Tensorflow: an improved Algorithm of Region Extraction and Multi-Scale F
 [![tensorflow](https://img.shields.io/badge/tensorflow-v1.13.0-red.svg)](https://img.shields.io/travis/maohye/combine-tensorflow)
 [![cuda](https://img.shields.io/badge/cuda-10.0-red.svg)](https://img.shields.io/travis/maohye/combine-tensorflow)
 
+DataSet
+-----------------
+&emsp;实证数据集为pascal voc标准数据集和kitti实际道路数据集。
+&emsp;因为两个数据集都很大，不能直接上传，所以提供下载地址。
+&emsp;pascal voc数据集下载地址: http://host.robots.ox.ac.uk/pascal/VOC/index.html
+&emsp;kitti数据集下载地址: http://www.cvlibs.net/datasets/kitti/
+
 文件夹结构和功能简介
 -----------------
 
 --`combine_pascal.py`  pascal voc0712数据集训练代码 
 &emsp;这里把pascal voc2007和2012数据集同时作为训练集。  
 &emsp;训练时必须修改：训练数据的tfrecords格式数据所在文件夹(dataset_dir)、网络参数权重ckpt文件所在文件夹(checkpoint_path)、
-&emsp;网络模型作用域(checkpoint_model_scope)、模型权重文件和结果指标events文件保存地址(model_dir)，
-&emsp;其他超参数(如学习率，迭代次数，批量大小等)根据实际情况修改。
+网络模型作用域(checkpoint_model_scope)、模型权重文件和结果指标events文件保存地址(model_dir)，
+其他超参数(如学习率，迭代次数，批量大小等)根据实际情况修改。
 
 --`combine_kitti.py`  kitti数据集训练代码  
 &emsp; 训练时必须修改：训练数据的tfrecords格式数据所在文件夹(dataset_dir)、网络参数权重ckpt文件所在文件夹(checkpoint_path)、

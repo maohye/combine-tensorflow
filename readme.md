@@ -83,6 +83,6 @@ Output Example
 ------------------
 Here are two examples of successful detection outputs: 
 
-![image](https://github.com/maohye/combine-tensorflow/pictures/1.jpg "image")
+![image](https://github.com/maohye/combine-tensorflow/tree/master/pictures/1.jpg "image")
 
-![image](https://github.com/maohye/combine-tensorflow/pictures/2.jpg "image")
+![image](https://github.com/maohye/combine-tensorflow/tree/master/pictures/2.jpg "image")

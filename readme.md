@@ -19,11 +19,11 @@ Combine-Tensorflow: an improved Algorithm of Region Extraction and Multi-Scale F
 文件夹结构和功能简介
 -----------------
 
---`combine_pascal.py`  
-  >pascal voc0712数据集训练代码，这里把pascal voc2007和2012数据集同时作为训练集。  
-  >训练时必须修改：训练数据的tfrecords格式数据所在文件夹(dataset_dir)、网络参数权重ckpt文件所在文件夹(checkpoint_path)、
-  >网络模型作用域(checkpoint_model_scope)、模型权重文件和结果指标events文件保存地址(model_dir)，
-  >其他超参数(如学习率，迭代次数，批量大小等)根据实际情况修改。  
+>--`combine_pascal.py`  
+  >>pascal voc0712数据集训练代码，这里把pascal voc2007和2012数据集同时作为训练集。  
+  >>训练时必须修改：训练数据的tfrecords格式数据所在文件夹(dataset_dir)、网络参数权重ckpt文件所在文件夹(checkpoint_path)、
+  >>网络模型作用域(checkpoint_model_scope)、模型权重文件和结果指标events文件保存地址(model_dir)，
+  >>其他超参数(如学习率，迭代次数，批量大小等)根据实际情况修改。  
 
 --`combine_kitti.py`   
   kitti数据集训练代码  

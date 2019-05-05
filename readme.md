@@ -1,7 +1,7 @@
 代码说明
 ======
 
-[![author](https://travis-ci.org/maohye/combine-tensorflow.svg?branch=master)](https://travis-ci.org/maohye/combine-tensorflow)
+[![](https://travis-ci.org/maohye/combine-tensorflow.svg?branch=master)](https://travis-ci.org/maohye/combine-tensorflow)
 
 combine-tensorflow展示的是基于`区域提取网络和多尺度卷积核的融合模型`的代码。
 

@@ -15,7 +15,7 @@ combine-tensorflow展示的是基于`区域提取网络和多尺度卷积核的�
 
 依赖包
 -----------------
-
+[![package](https://img.shields.io/pypi/v/package.svg?label=package)](https://pypi.org/project/package/)
 
 文件夹结构和功能简介
 -----------------
